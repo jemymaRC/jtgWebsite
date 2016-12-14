@@ -1,0 +1,36 @@
+extends layout
+
+block content
+    div.textContent
+      div
+        h1
+        p Welcome to Jartogo, your food network made up of health-conscious, time-poor consumers, certified cooks and caterers and cooperative farmers. Users can conveniently order from our online store, feature phone USSD menu or from a mobile smartphone app.
+            br
+        a(href='', class="enterButton button")
+          | Pull up a chair
+
+      form.frmNotifyCustomer
+          p
+              | We are currently working on our website.
+              br
+              | If you wish to be notified of our launch, please enter your details below.
+          ul
+              li.spoon
+                  input(type="text", name="txtName", id="txtName", placeholder="Your name")
+              li
+                  input(type="text", name="txtEmail", id="txtEmail", placeholder="Your email address")
+              li
+                  button(name="btnSubmit", class="submitButton button", type="submit")
+                    | Notify me!
+
+
+        div#confirmationPopup
+          div#close X
+          div#txtTitle
+          div#txtNotice
+
+
+
+        div#errorContainer
+            p Please correct the following errors and try again:
+            ul

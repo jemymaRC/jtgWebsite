@@ -1,0 +1,9 @@
+extends layout
+
+block content
+  <!--if env='development'-->
+  p= message
+  p= error.status
+  pre #{error.stack}
+  <!--else-->
+  <!--h1="Oh oh! An error just occured. Sorry about that."-->
